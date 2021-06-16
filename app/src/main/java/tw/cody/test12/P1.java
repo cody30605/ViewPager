@@ -20,19 +20,14 @@ public class P1 extends Fragment {
 //        return inflater.inflate(R.layout.p1,container,false);
         mainView = inflater.inflate(R.layout.p1,container,false);
         flipper = mainView.findViewById(R.id.flipper);
-//        flipper.getAccessibilityClassName()   //?
-        View v0 = flipper.getChildAt(0);  //?
+//        flipper.getAccessibilityClassName()
+        View v0 = flipper.getChildAt(0);
         View v1 = flipper.getChildAt(1);
         View v2 = flipper.getChildAt(2);
         View v3 = flipper.getChildAt(3);
-//        flipper.setOnClickListener(new View.OnClickListener() {    //?
-//            @Override
-//            public void onClick(View v) {
-//
-//            }
-//        });
+
         ClickListener listener = new ClickListener();
-//        listener.onClick(v0);   //?
+
         v0.setOnClickListener(listener);
         v1.setOnClickListener(listener);
         v2.setOnClickListener(listener);
@@ -41,7 +36,7 @@ public class P1 extends Fragment {
     }
 
 
-    private class ClickListener implements View.OnClickListener {   //?
+    private class ClickListener implements View.OnClickListener {
 
         @Override
         public void onClick(View v) {
